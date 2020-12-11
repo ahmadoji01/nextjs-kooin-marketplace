@@ -10,7 +10,7 @@ export default function BigProductCard({ imgURL, name, price, priceOld, sale }) 
                             </span>
                         }
                         <img src={imgURL} alt="Product Image" />
-                        <img class="image-hover" src="assets/images/product/s270/product-2-hover.jpg" alt="Product Image" />
+                        <img class="image-hover" src={imgURL} alt="Product Image" />
                     </a>
                     <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
                 </div>
