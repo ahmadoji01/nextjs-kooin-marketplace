@@ -6,7 +6,7 @@ export default function Header() {
 
                     <div className="col-auto">
                         <div className="header-logo justify-content-center">
-                            <a href="index.html"><img className="logo-vertical" src="assets/images/logo/logo.png" alt="Learts Logo" /></a>
+                            <a href="index.html"><img className="logo-vertical" src="/assets/images/logo/logo.png" alt="Learts Logo" /></a>
                         </div>
                     </div>
 
@@ -14,6 +14,43 @@ export default function Header() {
                         <div className="header6-search">
                             <form action="#">
                                 <div className="row no-gutters">
+                                    <nav className="site-main-menu justify-content-center menu-height-60">
+                                        <ul>
+                                            <li className="has-children"><a href="#"><span className="menu-text">Categories</span></a>
+                                                <ul className="sub-menu mega-menu">
+                                                    <li>
+                                                        <a href="#" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
+                                                        <ul>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-01.jpg" /> <a href="index.html"><span className="menu-text">Arts Propelled</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-02.jpg" /> <a href="index-2.html"><span className="menu-text">Decor Thriving</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-03.jpg" /> <a href="index-3.html"><span className="menu-text">Savvy Delight</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-04.jpg" /> <a href="index-4.html"><span className="menu-text">Perfect Escapes</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-2.html" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
+                                                        <ul>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-05.jpg" /> <a href="index-5.html"><span className="menu-text">Kitchen Cozy</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-06.jpg" /> <a href="index-6.html"><span className="menu-text">Dreamy Designs</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-07.jpg" /> <a href="index-7.html"><span className="menu-text">Crispy Recipes</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-08.jpg" /> <a href="index-8.html"><span className="menu-text">Decoholic Chic</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-2.html" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
+                                                        <ul>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-9.jpg" /> <a href="index-9.html"><span className="menu-text">Reblended Dish</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-10.jpg" /> <a href="index-10.html"><span className="menu-text">Craftin House</span></a></li>
+                                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-11.jpg" /> <a href="index-11.html"><span className="menu-text">Craftswork Biz</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" className="menu-banner"><img src="/assets/images/banner/menu-banner-1.jpg" alt="Home Menu Banner" /></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                     <div className="col">
                                         <input type="text" placeholder="Search Products..." />
                                     </div>
@@ -45,54 +82,54 @@ export default function Header() {
                     <div className="header-categories">
                         <button className="category-toggle"><i className="fal fa-bars"></i> Browse Categories</button>
                         <ul className="header-category-list">
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-1.png" alt="" /> Knitting</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-2.png" alt="" /> Sewing</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-3.png" alt="" /> Holyday gifts</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-4.png" alt="" /> Birthday gifts</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-5.png" alt="" /> Home decor</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-6.png" alt="" /> For kids & babies</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-7.png" alt="" /> Garden decor</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-8.png" alt="" /> Accessories</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-9.png" alt="" /> Soap</a></li>
-                            <li><a href="#"><img src="assets/images/icons/cat-icon-10.png" alt="" /> Sale</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-1.png" alt="" /> Knitting</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-2.png" alt="" /> Sewing</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-3.png" alt="" /> Holyday gifts</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-4.png" alt="" /> Birthday gifts</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-5.png" alt="" /> Home decor</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-6.png" alt="" /> For kids & babies</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-7.png" alt="" /> Garden decor</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-8.png" alt="" /> Accessories</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-9.png" alt="" /> Soap</a></li>
+                            <li><a href="#"><img src="/assets/images/icons/cat-icon-10.png" alt="" /> Sale</a></li>
                         </ul>
                     </div>
                     <nav className="site-main-menu justify-content-center menu-height-60">
                         <ul>
-                            <li className="has-children"><a href="#"><span className="menu-text">Home</span></a>
+                            <li className="has-children"><a href="#"><span className="menu-text">Kooin's Picks</span></a>
                                 <ul className="sub-menu mega-menu">
                                     <li>
                                         <a href="#" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
                                         <ul>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-01.jpg" /> <a href="index.html"><span className="menu-text">Arts Propelled</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-02.jpg" /> <a href="index-2.html"><span className="menu-text">Decor Thriving</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-03.jpg" /> <a href="index-3.html"><span className="menu-text">Savvy Delight</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-04.jpg" /> <a href="index-4.html"><span className="menu-text">Perfect Escapes</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-01.jpg" /> <a href="index.html"><span className="menu-text">Arts Propelled</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-02.jpg" /> <a href="index-2.html"><span className="menu-text">Decor Thriving</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-03.jpg" /> <a href="index-3.html"><span className="menu-text">Savvy Delight</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-04.jpg" /> <a href="index-4.html"><span className="menu-text">Perfect Escapes</span></a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="index-2.html" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
                                         <ul>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-05.jpg" /> <a href="index-5.html"><span className="menu-text">Kitchen Cozy</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-06.jpg" /> <a href="index-6.html"><span className="menu-text">Dreamy Designs</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-07.jpg" /> <a href="index-7.html"><span className="menu-text">Crispy Recipes</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-08.jpg" /> <a href="index-8.html"><span className="menu-text">Decoholic Chic</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-05.jpg" /> <a href="index-5.html"><span className="menu-text">Kitchen Cozy</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-06.jpg" /> <a href="index-6.html"><span className="menu-text">Dreamy Designs</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-07.jpg" /> <a href="index-7.html"><span className="menu-text">Crispy Recipes</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-08.jpg" /> <a href="index-8.html"><span className="menu-text">Decoholic Chic</span></a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="index-2.html" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
                                         <ul>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-9.jpg" /> <a href="index-9.html"><span className="menu-text">Reblended Dish</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-10.jpg" /> <a href="index-10.html"><span className="menu-text">Craftin House</span></a></li>
-                                            <li> <img className="mmh_img " src="assets/images/demo/menu/home-11.jpg" /> <a href="index-11.html"><span className="menu-text">Craftswork Biz</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-9.jpg" /> <a href="index-9.html"><span className="menu-text">Reblended Dish</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-10.jpg" /> <a href="index-10.html"><span className="menu-text">Craftin House</span></a></li>
+                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-11.jpg" /> <a href="index-11.html"><span className="menu-text">Craftswork Biz</span></a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#" className="menu-banner"><img src="assets/images/banner/menu-banner-1.jpg" alt="Home Menu Banner" /></a>
+                                        <a href="#" className="menu-banner"><img src="/assets/images/banner/menu-banner-1.jpg" alt="Home Menu Banner" /></a>
                                     </li>
                                 </ul>
                             </li>
-                            <li className="has-children"><a href="#"><span className="menu-text">Shop</span></a>
+                            <li className="has-children"><a href="#"><span className="menu-text">People's Favorites</span></a>
                                 <ul className="sub-menu mega-menu">
                                     <li>
                                         <a href="#" className="mega-menu-title"><span className="menu-text">SHOP PAGES</span></a>
@@ -133,100 +170,16 @@ export default function Header() {
                                         </ul>
                                     </li>
                                     <li className="align-self-center">
-                                        <a href="#" className="menu-banner"><img src="assets/images/banner/menu-banner-2.png" alt="Shop Menu Banner" /></a>
+                                        <a href="#" className="menu-banner"><img src="/assets/images/banner/menu-banner-2.png" alt="Shop Menu Banner" /></a>
                                     </li>
                                 </ul>
                             </li>
-                            <li className="has-children"><a href="#"><span className="menu-text">Project</span></a>
+                            <li className="has-children"><a href="#"><span className="menu-text">Your Gift Ideas</span></a>
                                 <ul className="sub-menu">
                                     <li><a href="portfolio-3-columns.html"><span className="menu-text">Portfolio 3 Columns</span></a></li>
                                     <li><a href="portfolio-4-columns.html"><span className="menu-text">Portfolio 4 Columns</span></a></li>
                                     <li><a href="portfolio-5-columns.html"><span className="menu-text">Portfolio 5 Columns</span></a></li>
                                     <li><a href="portfolio-details.html"><span className="menu-text">Portfolio Details</span></a></li>
-                                </ul>
-                            </li>
-                            <li className="has-children"><a href="#"><span className="menu-text">Elements</span></a>
-                                <ul className="sub-menu mega-menu">
-                                    <li>
-                                        <a href="#" className="mega-menu-title"><span className="menu-text">Column One</span></a>
-                                        <ul>
-                                            <li><a href="elements-products.html"><span className="menu-text">Product Styles</span></a></li>
-                                            <li><a href="elements-products-tabs.html"><span className="menu-text">Product Tabs</span></a></li>
-                                            <li><a href="elements-product-sale-banner.html"><span className="menu-text">Product & Sale Banner</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="mega-menu-title"><span className="menu-text">Column Two</span></a>
-                                        <ul>
-                                            <li><a href="elements-category-banner.html"><span className="menu-text">Category Banner</span></a></li>
-                                            <li><a href="elements-team.html"><span className="menu-text">Team Member</span></a></li>
-                                            <li><a href="elements-testimonials.html"><span className="menu-text">Testimonials</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="mega-menu-title"><span className="menu-text">Column Three</span></a>
-                                        <ul>
-                                            <li><a href="elements-instagram.html"><span className="menu-text">Instagram</span></a></li>
-                                            <li><a href="elements-map.html"><span className="menu-text">Google Map</span></a></li>
-                                            <li><a href="elements-icon-box.html"><span className="menu-text">Icon Box</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="mega-menu-title"><span className="menu-text">Column Four</span></a>
-                                        <ul>
-                                            <li><a href="elements-buttons.html"><span className="menu-text">Buttons</span></a></li>
-                                            <li><a href="elements-faq.html"><span className="menu-text">FAQs / Toggles</span></a></li>
-                                            <li><a href="elements-brands.html"><span className="menu-text">Brands</span></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="has-children"><a href="#"><span className="menu-text">Blog</span></a>
-                                <ul className="sub-menu">
-                                    <li className="has-children"><a href="blog-right-sidebar.html"><span className="menu-text">Standard Layout</span></a>
-                                        <ul className="sub-menu">
-                                            <li><a href="blog-right-sidebar.html"><span className="menu-text">Right Sidebar</span></a></li>
-                                            <li><a href="blog-left-sidebar.html"><span className="menu-text">Left Sidebar</span></a></li>
-                                            <li><a href="blog-fullwidth.html"><span className="menu-text">Full Width</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><a href="blog-grid-right-sidebar.html"><span className="menu-text">Grid Layout</span></a>
-                                        <ul className="sub-menu">
-                                            <li><a href="blog-grid-right-sidebar.html"><span className="menu-text">Right Sidebar</span></a></li>
-                                            <li><a href="blog-grid-left-sidebar.html"><span className="menu-text">Left Sidebar</span></a></li>
-                                            <li><a href="blog-grid-fullwidth.html"><span className="menu-text">Full Width</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><a href="blog-list-right-sidebar.html"><span className="menu-text">List Layout</span></a>
-                                        <ul className="sub-menu">
-                                            <li><a href="blog-list-right-sidebar.html"><span className="menu-text">Right Sidebar</span></a></li>
-                                            <li><a href="blog-list-left-sidebar.html"><span className="menu-text">Left Sidebar</span></a></li>
-                                            <li><a href="blog-list-fullwidth.html"><span className="menu-text">Full Width</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><a href="blog-masonry-right-sidebar.html"><span className="menu-text">Masonry Layout</span></a>
-                                        <ul className="sub-menu">
-                                            <li><a href="blog-masonry-right-sidebar.html"><span className="menu-text">Right Sidebar</span></a></li>
-                                            <li><a href="blog-masonry-left-sidebar.html"><span className="menu-text">Left Sidebar</span></a></li>
-                                            <li><a href="blog-masonry-fullwidth.html"><span className="menu-text">Full Width</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-children"><a href="blog-details-right-sidebar.html"><span className="menu-text">Single Post Layout</span></a>
-                                        <ul className="sub-menu">
-                                            <li><a href="blog-details-right-sidebar.html"><span className="menu-text">Right Sidebar</span></a></li>
-                                            <li><a href="blog-details-left-sidebar.html"><span className="menu-text">Left Sidebar</span></a></li>
-                                            <li><a href="blog-details-fullwidth.html"><span className="menu-text">Full Width</span></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="has-children"><a href="#"><span className="menu-text">Pages</span></a>
-                                <ul className="sub-menu">
-                                    <li><a href="about-us.html"><span className="menu-text">About us</span></a></li>
-                                    <li><a href="about-us-2.html"><span className="menu-text">About us 02</span></a></li>
-                                    <li><a href="contact-us.html"><span className="menu-text">Contact us</span></a></li>
-                                    <li><a href="coming-soon.html"><span className="menu-text">Coming Soon</span></a></li>
-                                    <li><a href="404.html"><span className="menu-text">Page 404</span></a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -10,18 +10,29 @@ import StickyHeader from '../components/elements/stickyheader'
 import BannerContainer from '../components/containers/bannercontainer'
 import TopContainer from '../components/containers/topcontainer'
 import ProductContainer from '../components/containers/productcontainer'
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client'
+import { GET_HOME_PRODUCTS, GET_POPULAR_PRODUCTS } from '../lib/queries'
+import FeatureContainer from '../components/containers/featurecontainer'
+import SaleContainer from '../components/containers/salecontainer'
+import BlogUpdateContainer from '../components/containers/blogupdatecontainer'
+import Footer from '../components/elements/footer'
+import InstagramPostContainer from '../components/containers/instagrampostcontainer'
 
-export default function Home({ woodsProducts, potteriesProducts }) {
+export default function Home({ woodsProducts, potteriesProducts, popularCategoriesProducts }) {
   return (
     <BaseLayout home>
       <TopBar />
       <Header />
       <StickyHeader />
       <BannerContainer />
-      <TopContainer />
-      <ProductContainer products={woodsProducts} position="left" />
-      <ProductContainer products={potteriesProducts} position="right" />
+      <TopContainer categoriesProducts={popularCategoriesProducts} />
+      <ProductContainer title="See Our Choices of Products Made from Woods" products={woodsProducts} position="left" />
+      <ProductContainer title="See Our Choices of Potteries" products={potteriesProducts} position="right" />
+      <FeatureContainer />
+      <SaleContainer />
+      <BlogUpdateContainer />
+      <InstagramPostContainer />
+      <Footer />
     </BaseLayout>
   )
 }
@@ -33,19 +44,18 @@ export async function getStaticProps() {
   })
   
   const {data} = await client.query({
-    query: gql`
-      query {
-        categories(where: { _or: [{ name: "Woods" }, { name: "Potteries" }] }) {
-            products(limit: 5) { name price product_images{ imageURL } }
-        }
-      }
-    `
+    query: GET_HOME_PRODUCTS
+  })
+
+  let popularCategoriesProducts = await client.query({
+    query: GET_POPULAR_PRODUCTS
   })
 
   return {
     props: {
       woodsProducts: data.categories[0].products,
-      potteriesProducts: data.categories[1].products
+      potteriesProducts: data.categories[1].products,
+      popularCategoriesProducts: popularCategoriesProducts.data.categories
     }
   }
 }

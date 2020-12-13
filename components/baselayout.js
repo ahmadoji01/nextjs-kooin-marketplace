@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Kooin - Your Favorite Handcrafts on Your Hand'
 
 export default function BaseLayout({ children, home }) {
   return (
@@ -9,12 +9,12 @@ export default function BaseLayout({ children, home }) {
         <Head>
             <meta charset="utf-8" />
             <meta http-equiv="x-ua-compatible" content="ie=edge" />
-            <title>Learts – Handmade Shop eCommerce HTML Template</title>
+            <title>{siteTitle}</title>
             <meta name="robots" content="noindex, follow" />
             <meta name="description" content="" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             
-            <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png" />
+            <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icon.png" />
 
             <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css" />
             <link rel="stylesheet" href="/assets/css/vendor/font-awesome-pro.min.css" />
