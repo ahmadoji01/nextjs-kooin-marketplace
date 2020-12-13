@@ -1,17 +1,21 @@
-export default function BigProductCard({ imgURL, name, price, priceOld, sale }) {
+import Link from 'next/link'
+
+export default function BigProductCard({ imgURL, name, price, priceOld, sale, slug }) {
     return(
         <div class="col">
             <div class="product">
                 <div class="product-thumb">
-                    <a href="product-details.html" class="image">
-                        {sale && 
-                            <span class="product-badges">
-                                <span class="onsale">{sale}</span>
-                            </span>
-                        }
-                        <img src={imgURL} alt="Product Image" />
-                        <img class="image-hover" src={imgURL} alt="Product Image" />
-                    </a>
+                    <Link href={"/products/" + slug}>
+                        <a href="product-details.html" class="image">
+                            {sale && 
+                                <span class="product-badges">
+                                    <span class="onsale">{sale}</span>
+                                </span>
+                            }
+                            <img src={imgURL} alt="Product Image" />
+                            <img class="image-hover" src={imgURL} alt="Product Image" />
+                        </a>
+                    </Link>
                     <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
                 </div>
                 <div class="product-info">

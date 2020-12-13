@@ -1,4 +1,6 @@
 import { API_URL } from '../../lib/appconst'
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom } from 'pure-react-carousel'
+import 'pure-react-carousel/dist/react-carousel.es.css'
 
 export default function ProductDetailContainer({ productData }) {
     let dataImages = "["
@@ -8,45 +10,39 @@ export default function ProductDetailContainer({ productData }) {
     dataImages = dataImages + "]"
     
     return(
-        <div class="section section-padding border-bottom">
+        <div class="section section-padding border-bottom" style={{ paddingTop: 30 }}>
             <div class="container">
-                <div class="row learts-mb-n40">
+                <div class="row">
+                    <div class="col">
+
+                        <div class="page-title">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="shop.html">Products</a></li>
+                                <li class="breadcrumb-item active">Cleaning Dustpan & Brush</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row learts-mb-40" style={{ marginTop: 20 }}>
 
                     <div class="col-lg-6 col-12 learts-mb-40">
-                        <div class="product-images">
-                            <button class="product-gallery-popup hintT-left" data-hint="Click to enlarge" data-images={dataImages}>
-                                <i class="far fa-expand"></i>
-                            </button>
-                            <a href="https://www.youtube.com/watch?v=1jSsy7DtYgc" class="product-video-popup video-popup hintT-left" data-hint="Click to see video"><i class="fal fa-play"></i></a>
-                            <div class="product-gallery-slider">
-                                <div class="product-zoom" data-image="/assets/images/product/single/1/product-zoom-1.jpg">
-                                    <img src="/assets/images/product/single/1/product-1.jpg" alt="" />
-                                </div>
-                                <div class="product-zoom" data-image="/assets/images/product/single/1/product-zoom-2.jpg">
-                                    <img src="/assets/images/product/single/1/product-2.jpg" alt="" />
-                                </div>
-                                <div class="product-zoom" data-image="/assets/images/product/single/1/product-zoom-3.jpg">
-                                    <img src="/assets/images/product/single/1/product-3.jpg" alt="" />
-                                </div>
-                                <div class="product-zoom" data-image="/assets/images/product/single/1/product-zoom-4.jpg">
-                                    <img src="/assets/images/product/single/1/product-4.jpg" alt="" />
-                                </div>
-                            </div>
-                            <div class="product-thumb-slider">
-                                <div class="item">
-                                    <img src="/assets/images/product/single/1/product-thumb-1.jpg" alt="" />
-                                </div>
-                                <div class="item">
-                                    <img src="/assets/images/product/single/1/product-thumb-2.jpg" alt="" />
-                                </div>
-                                <div class="item">
-                                    <img src="/assets/images/product/single/1/product-thumb-3.jpg" alt="" />
-                                </div>
-                                <div class="item">
-                                    <img src="/assets/images/product/single/1/product-thumb-4.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
+                        <CarouselProvider
+                            naturalSlideWidth={100}
+                            naturalSlideHeight={100}
+                            totalSlides={productData.product_images.length}
+                            >
+                            <Slider>
+                                { productData.product_images.map((productImage, index) => (
+                                    <Slide index={index}>
+                                        <ImageWithZoom src={API_URL + productImage.imageURL} />
+                                    </Slide>
+                                )) }
+                            </Slider>
+                            <ButtonBack>Back</ButtonBack>
+                            <ButtonNext>Next</ButtonNext>
+                        </CarouselProvider>
                     </div>
                     <div class="col-lg-6 col-12 learts-mb-40">
                         <div class="product-summery">
@@ -60,10 +56,10 @@ export default function ProductDetailContainer({ productData }) {
                                 </span>
                                 <a href="#reviews" class="review-link">(<span class="count">3</span> customer reviews)</a>
                             </div>
-                            <h3 class="product-title">Cleaning Dustpan & Brush</h3>
-                            <div class="product-price">£38.00 – £50.00</div>
+                            <h3 class="product-title">{ productData.name }</h3>
+                            <div class="product-price">Rp. { productData.price }</div>
                             <div class="product-description">
-                                <p>Easy clip-on handle – Hold the brush and dustpan together for storage; the dustpan edge is serrated to allow easy scraping off the hair without entanglement. High-quality bristles – no burr damage, no scratches, thick and durable, comfortable to remove dust and smaller particles.</p>
+                                <p>{ productData.description }</p>
                             </div>
                             <div class="product-variations">
                                 <table>

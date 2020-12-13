@@ -1,5 +1,6 @@
 import BigProductCard from '../elements/bigproductcard'
 import { API_URL } from '../../lib/appconst'
+import Link from 'next/link'
 
 export default function ProductContainer({ title, description, position, products }) {
     
@@ -23,17 +24,19 @@ export default function ProductContainer({ title, description, position, product
                 { products && 
                     <div className="row learts-mb-n30">
                         <div className={saleBannerClass}>
-                            <div className="sale-banner11">
-                                <div className="inner">
-                                    <img src={API_URL + products[0].product_images[0].imageURL} alt="" />
-                                    <div className="category-banner4">
-                                        <div className="content big-product-banner" data-bg-color="#faf5e5cc">
-                                            <h3 className="title">{products[0].name}</h3>
-                                            <span className="price big-price">Rp. {products[0].price}</span>
+                            <Link href={"/products/" + products[0].slug}>
+                                <div className="sale-banner11">
+                                    <div className="inner">
+                                        <img src={API_URL + products[0].product_images[0].imageURL} alt="" />
+                                        <div className="category-banner4">
+                                            <div className="content big-product-banner" data-bg-color="#faf5e5cc">
+                                                <h3 className="title">{products[0].name}</h3>
+                                                <span className="price big-price">Rp. {products[0].price}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                             <div className="d-flex justify-content-center learts-mt-50">
                                 <a href="#" className="btn btn-primary btn-hover-black">shop now</a>
                             </div>
@@ -44,7 +47,8 @@ export default function ProductContainer({ title, description, position, product
                                     <BigProductCard 
                                         imgURL={ API_URL + product.product_images[0].imageURL}
                                         price={product.price}
-                                        name={product.name} 
+                                        name={product.name}
+                                        slug={product.slug} 
                                         //priceOld="150000" 
                                         //sale="33%" 
                                         />

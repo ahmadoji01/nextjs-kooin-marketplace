@@ -16,7 +16,6 @@ export default function Post({ productData }) {
           <StickyHeader />
           <ProductDetailContainer productData={productData} />
           <ProductInfoContainer productData={productData} />
-          <RelatedProductContainer />
           <Footer />
         </BaseLayout>
     )

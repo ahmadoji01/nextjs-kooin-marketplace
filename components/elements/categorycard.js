@@ -1,4 +1,5 @@
-import { API_URL } from "../../lib/appconst";
+import { API_URL } from "../../lib/appconst"
+import Link from 'next/link'
 
 export default function CategoryCard({ title, bgColor, product }) {
     return(
