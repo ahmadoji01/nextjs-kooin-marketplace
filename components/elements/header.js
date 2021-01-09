@@ -1,18 +1,18 @@
 export default function Header() {
     return (
-        <div className="header-section section bg-white d-none d-xl-block">
+        <div className="header-section section bg-white d-none d-md-block d-l-block d-xl-block">
             <div className="container">
                 <div className="row justify-content-between align-items-center">
 
                     <div className="col-auto">
                         <div className="header-logo justify-content-center">
-                            <a href="index.html"><img className="logo-vertical" src="/assets/images/logo/logo.png" alt="Learts Logo" /></a>
+                            <a href="/"><img className="logo-vertical" src="/assets/images/logo/logo.png" alt="Learts Logo" /></a>
                         </div>
                     </div>
 
                     <div className="col">
                         <div className="header6-search">
-                            <form action="#">
+                            <form action="/search">
                                 <div className="row no-gutters">
                                     <nav className="site-main-menu justify-content-center menu-height-60">
                                         <ul>
@@ -96,39 +96,6 @@ export default function Header() {
                     </div>
                     <nav className="site-main-menu justify-content-center menu-height-60">
                         <ul>
-                            <li className="has-children"><a href="#"><span className="menu-text">Kooin's Picks</span></a>
-                                <ul className="sub-menu mega-menu">
-                                    <li>
-                                        <a href="#" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
-                                        <ul>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-01.jpg" /> <a href="index.html"><span className="menu-text">Arts Propelled</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-02.jpg" /> <a href="index-2.html"><span className="menu-text">Decor Thriving</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-03.jpg" /> <a href="index-3.html"><span className="menu-text">Savvy Delight</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-04.jpg" /> <a href="index-4.html"><span className="menu-text">Perfect Escapes</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
-                                        <ul>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-05.jpg" /> <a href="index-5.html"><span className="menu-text">Kitchen Cozy</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-06.jpg" /> <a href="index-6.html"><span className="menu-text">Dreamy Designs</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-07.jpg" /> <a href="index-7.html"><span className="menu-text">Crispy Recipes</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-08.jpg" /> <a href="index-8.html"><span className="menu-text">Decoholic Chic</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html" className="mega-menu-title"><span className="menu-text">HOME GROUP</span></a>
-                                        <ul>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-9.jpg" /> <a href="index-9.html"><span className="menu-text">Reblended Dish</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-10.jpg" /> <a href="index-10.html"><span className="menu-text">Craftin House</span></a></li>
-                                            <li> <img className="mmh_img " src="/assets/images/demo/menu/home-11.jpg" /> <a href="index-11.html"><span className="menu-text">Craftswork Biz</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="menu-banner"><img src="/assets/images/banner/menu-banner-1.jpg" alt="Home Menu Banner" /></a>
-                                    </li>
-                                </ul>
-                            </li>
                             <li className="has-children"><a href="#"><span className="menu-text">People's Favorites</span></a>
                                 <ul className="sub-menu mega-menu">
                                     <li>

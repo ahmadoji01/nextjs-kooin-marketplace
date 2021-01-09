@@ -3,9 +3,9 @@ import { getProduct, getAllProducts, getProductsForStaticPaths } from '../../lib
 import Footer from '../../components/elements/footer'
 import ProductDetailContainer from '../../components/containers/productdetailcontainer'
 import ProductInfoContainer from '../../components/containers/productinfocontainer'
-import RelatedProductContainer from '../../components/containers/relatedproductcontainer'
 import TopBar from '../../components/elements/topbar'
 import Header from '../../components/elements/header'
+import MobileHeader from '../components/elements/mobileheader'
 import StickyHeader from '../../components/elements/stickyheader'
 
 export default function Post({ productData }) {
@@ -13,6 +13,7 @@ export default function Post({ productData }) {
         <BaseLayout>
           <TopBar />
           <Header />
+          <MobileHeader />
           <StickyHeader />
           <ProductDetailContainer productData={productData} />
           <ProductInfoContainer productData={productData} />

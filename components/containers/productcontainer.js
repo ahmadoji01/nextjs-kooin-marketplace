@@ -1,6 +1,7 @@
 import BigProductCard from '../elements/bigproductcard'
 import { API_URL } from '../../lib/appconst'
 import Link from 'next/link'
+import CurrencyFormat from 'react-currency-format'
 
 export default function ProductContainer({ title, description, position, products }) {
     
@@ -31,7 +32,9 @@ export default function ProductContainer({ title, description, position, product
                                         <div className="category-banner4">
                                             <div className="content big-product-banner" data-bg-color="#faf5e5cc">
                                                 <h3 className="title">{products[0].name}</h3>
-                                                <span className="price big-price">Rp. {products[0].price}</span>
+                                                <span className="price big-price">
+                                                    <CurrencyFormat value={products[0].price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -49,6 +52,7 @@ export default function ProductContainer({ title, description, position, product
                                         price={product.price}
                                         name={product.name}
                                         slug={product.slug} 
+                                        key={product.id}
                                         //priceOld="150000" 
                                         //sale="33%" 
                                         />

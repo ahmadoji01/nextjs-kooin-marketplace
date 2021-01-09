@@ -1,19 +1,22 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout from '../components/layout'
+import BaseLayout from '../components/baselayout'
+import TopBar from '../components/elements/topbar'
+import Header from '../components/elements/header'
+import MobileHeader from '../components/elements/mobileheader'
+import StickyHeader from '../components/elements/stickyheader'
+import Footer from '../components/elements/footer'
+import InstagramPostContainer from '../components/containers/instagrampostcontainer'
+import SearchContainer from '../components/containers/searchcontainer'
 
 export default function Search() {
     return( 
-        <Layout>
-            <Head>
-                <title>First Post</title>
-            </Head>
-            <h1>First Post</h1>
-            <h2>
-                <Link href="/">
-                <a>Back to home</a>
-                </Link>
-            </h2>
-        </Layout>
+        <BaseLayout home>
+            <TopBar />
+            <Header />
+            <MobileHeader />
+            <StickyHeader />
+            <SearchContainer />
+            <InstagramPostContainer />
+            <Footer />
+        </BaseLayout>
     )
 }

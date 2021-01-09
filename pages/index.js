@@ -1,11 +1,7 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import Date from '../components/date'
 import BaseLayout from '../components/baselayout'
 import TopBar from '../components/elements/topbar'
 import Header from '../components/elements/header'
+import MobileHeader from '../components/elements/mobileheader'
 import StickyHeader from '../components/elements/stickyheader'
 import BannerContainer from '../components/containers/bannercontainer'
 import TopContainer from '../components/containers/topcontainer'
@@ -21,18 +17,19 @@ import InstagramPostContainer from '../components/containers/instagrampostcontai
 export default function Home({ woodsProducts, potteriesProducts, popularCategoriesProducts }) {
   return (
     <BaseLayout home>
-      <TopBar />
-      <Header />
-      <StickyHeader />
-      <BannerContainer />
-      <TopContainer categoriesProducts={popularCategoriesProducts} />
-      <ProductContainer title="See Our Choices of Products Made from Woods" products={woodsProducts} position="left" />
-      <ProductContainer title="See Our Choices of Potteries" products={potteriesProducts} position="right" />
-      <FeatureContainer />
-      <SaleContainer />
-      <BlogUpdateContainer />
-      <InstagramPostContainer />
-      <Footer />
+        <TopBar />
+        <Header />
+        <MobileHeader />
+        <StickyHeader />
+        <BannerContainer />
+        <TopContainer categoriesProducts={popularCategoriesProducts} />
+        <ProductContainer title="See Our Choices of Products Made from Woods" products={woodsProducts} position="left" />
+        <ProductContainer title="See Our Choices of Potteries" products={potteriesProducts} position="right" />
+        <FeatureContainer />
+        <SaleContainer />
+        <BlogUpdateContainer />
+        <InstagramPostContainer />
+        <Footer />
     </BaseLayout>
   )
 }

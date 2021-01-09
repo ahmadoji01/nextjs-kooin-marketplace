@@ -1,34 +1,40 @@
 import Link from 'next/link'
+import CurrencyFormat from 'react-currency-format'
 
 export default function BigProductCard({ imgURL, name, price, priceOld, sale, slug }) {
     return(
-        <div class="col">
-            <div class="product">
-                <div class="product-thumb">
+        <div className="col">
+            <div className="product">
+                <div className="product-thumb">
                     <Link href={"/products/" + slug}>
-                        <a href="product-details.html" class="image">
+                        <a href="product-details.html" className="image">
                             {sale && 
-                                <span class="product-badges">
-                                    <span class="onsale">{sale}</span>
+                                <span className="product-badges">
+                                    <span className="onsale">{sale}</span>
                                 </span>
                             }
                             <img src={imgURL} alt="Product Image" />
-                            <img class="image-hover" src={imgURL} alt="Product Image" />
+                            <img className="image-hover" src={imgURL} alt="Product Image" />
                         </a>
                     </Link>
-                    <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                    <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                 </div>
-                <div class="product-info">
-                    <h6 class="title"><a href="product-details.html">{name}</a></h6>
-                    <span class="price">
+                <div className="product-info">
+                    <h6 className="title"><a href="product-details.html">{name}</a></h6>
+                    <span className="price">
                         {priceOld ? 
-                        <><span class="old">Rp. {priceOld}</span><span class="new">Rp. {price}</span></>
-                        : <>Rp. {price}</>} 
+                        <>
+                            <span className="old">
+                                <CurrencyFormat value={priceOld} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} />
+                            </span>
+                            <span className="new"><CurrencyFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} /></span>
+                        </>
+                        : <><CurrencyFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} /></>} 
                     </span>
-                    <div class="product-buttons">
-                        <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                        <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                        <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                    <div className="product-buttons">
+                        <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                        <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                        <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                     </div>
                 </div>
             </div>

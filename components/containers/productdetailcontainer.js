@@ -1,5 +1,6 @@
 import { API_URL } from '../../lib/appconst'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom } from 'pure-react-carousel'
+import CurrencyFormat from 'react-currency-format'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 
 export default function ProductDetailContainer({ productData }) {
@@ -10,24 +11,24 @@ export default function ProductDetailContainer({ productData }) {
     dataImages = dataImages + "]"
     
     return(
-        <div class="section section-padding border-bottom" style={{ paddingTop: 30 }}>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+        <div className="section section-padding border-bottom" style={{ paddingTop: 30 }}>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
 
-                        <div class="page-title">
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="shop.html">Products</a></li>
-                                <li class="breadcrumb-item active">Cleaning Dustpan & Brush</li>
+                        <div className="page-title">
+                            <ul className="breadcrumb">
+                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li className="breadcrumb-item"><a href="shop.html">Products</a></li>
+                                <li className="breadcrumb-item active">Cleaning Dustpan & Brush</li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
-                <div class="row learts-mb-40" style={{ marginTop: 20 }}>
+                <div className="row learts-mb-40" style={{ marginTop: 20 }}>
 
-                    <div class="col-lg-6 col-12 learts-mb-40">
+                    <div className="col-lg-6 col-12 learts-mb-40">
                         <CarouselProvider
                             naturalSlideWidth={100}
                             naturalSlideHeight={100}
@@ -44,30 +45,30 @@ export default function ProductDetailContainer({ productData }) {
                             <ButtonNext>Next</ButtonNext>
                         </CarouselProvider>
                     </div>
-                    <div class="col-lg-6 col-12 learts-mb-40">
-                        <div class="product-summery">
-                            <div class="product-nav">
-                                <a href="#"><i class="fal fa-long-arrow-left"></i></a>
-                                <a href="#"><i class="fal fa-long-arrow-right"></i></a>
+                    <div className="col-lg-6 col-12 learts-mb-40">
+                        <div className="product-summery">
+                            <div className="product-nav">
+                                <a href="#"><i className="fal fa-long-arrow-left"></i></a>
+                                <a href="#"><i className="fal fa-long-arrow-right"></i></a>
                             </div>
-                            <div class="product-ratings">
-                                <span class="star-rating">
-                                    <span class="rating-active" style={{ width: "100%" }}>ratings</span>
+                            <div className="product-ratings">
+                                <span className="star-rating">
+                                    <span className="rating-active" style={{ width: "100%" }}>ratings</span>
                                 </span>
-                                <a href="#reviews" class="review-link">(<span class="count">3</span> customer reviews)</a>
+                                <a href="#reviews" className="review-link">(<span className="count">3</span> customer reviews)</a>
                             </div>
-                            <h3 class="product-title">{ productData.name }</h3>
-                            <div class="product-price">Rp. { productData.price }</div>
-                            <div class="product-description">
+                            <h3 className="product-title">{ productData.name }</h3>
+                            <div className="product-price"><CurrencyFormat value={productData.price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} /></div>
+                            <div className="product-description">
                                 <p>{ productData.description }</p>
                             </div>
-                            <div class="product-variations">
+                            <div className="product-variations">
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td class="label"><span>Size</span></td>
-                                            <td class="value">
-                                                <div class="product-sizes">
+                                            <td className="label"><span>Size</span></td>
+                                            <td className="value">
+                                                <div className="product-sizes">
                                                     <a href="#">Large</a>
                                                     <a href="#">Medium</a>
                                                     <a href="#">Small</a>
@@ -75,58 +76,58 @@ export default function ProductDetailContainer({ productData }) {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="label"><span>Color</span></td>
-                                            <td class="value">
-                                                <div class="product-colors">
+                                            <td className="label"><span>Color</span></td>
+                                            <td className="value">
+                                                <div className="product-colors">
                                                     <a href="#" data-bg-color="#000000"></a>
                                                     <a href="#" data-bg-color="#ffffff"></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="label"><span>Quantity</span></td>
-                                            <td class="value">
-                                                <div class="product-quantity">
-                                                    <span class="qty-btn minus"><i class="ti-minus"></i></span>
-                                                    <input type="text" class="input-qty" value="1" />
-                                                    <span class="qty-btn plus"><i class="ti-plus"></i></span>
+                                            <td className="label"><span>Quantity</span></td>
+                                            <td className="value">
+                                                <div className="product-quantity">
+                                                    <span className="qty-btn minus"><i className="ti-minus"></i></span>
+                                                    <input type="text" className="input-qty" value="1" />
+                                                    <span className="qty-btn plus"><i className="ti-plus"></i></span>
                                                 </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="product-buttons">
-                                <a href="#" class="btn btn-icon btn-outline-body btn-hover-dark hintT-top" data-hint="Add to Wishlist"><i class="fal fa-heart"></i></a>
-                                <a href="#" class="btn btn-dark btn-outline-hover-dark"><i class="fal fa-shopping-cart"></i> Add to Cart</a>
-                                <a href="#" class="btn btn-icon btn-outline-body btn-hover-dark hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                            <div className="product-buttons">
+                                <a href="#" className="btn btn-icon btn-outline-body btn-hover-dark hintT-top" data-hint="Add to Wishlist"><i className="fal fa-heart"></i></a>
+                                <a href="#" className="btn btn-dark btn-outline-hover-dark"><i className="fal fa-shopping-cart"></i> Add to Cart</a>
+                                <a href="#" className="btn btn-icon btn-outline-body btn-hover-dark hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                             </div>
-                            <div class="product-brands">
-                                <span class="title">Brands</span>
-                                <div class="brands">
+                            <div className="product-brands">
+                                <span className="title">Brands</span>
+                                <div className="brands">
                                     <a href="#"><img src="/assets/images/brands/brand-3.png" alt="" /></a>
                                     <a href="#"><img src="/assets/images/brands/brand-8.png" alt="" /></a>
                                 </div>
                             </div>
-                            <div class="product-meta">
+                            <div className="product-meta">
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td class="label"><span>SKU</span></td>
-                                            <td class="value">0404019</td>
+                                            <td className="label"><span>SKU</span></td>
+                                            <td className="value">0404019</td>
                                         </tr>
                                         <tr>
-                                            <td class="label"><span>Category</span></td>
-                                            <td class="value">
-                                                <ul class="product-category">
+                                            <td className="label"><span>Category</span></td>
+                                            <td className="value">
+                                                <ul className="product-category">
                                                     <li><a href="#">Kitchen</a></li>
                                                 </ul>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="label"><span>Tags</span></td>
-                                            <td class="value">
-                                                <ul class="product-tags">
+                                            <td className="label"><span>Tags</span></td>
+                                            <td className="value">
+                                                <ul className="product-tags">
                                                     <li><a href="#">handmade</a></li>
                                                     <li><a href="#">learts</a></li>
                                                     <li><a href="#">mug</a></li>
@@ -136,14 +137,14 @@ export default function ProductDetailContainer({ productData }) {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="label"><span>Share on</span></td>
-                                            <td class="va">
-                                                <div class="product-share">
-                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                                                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                                                    <a href="#"><i class="fal fa-envelope"></i></a>
+                                            <td className="label"><span>Share on</span></td>
+                                            <td className="va">
+                                                <div className="product-share">
+                                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                                    <a href="#"><i className="fab fa-google-plus-g"></i></a>
+                                                    <a href="#"><i className="fab fa-pinterest"></i></a>
+                                                    <a href="#"><i className="fal fa-envelope"></i></a>
                                                 </div>
                                             </td>
                                         </tr>

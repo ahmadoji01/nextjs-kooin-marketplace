@@ -1,233 +1,233 @@
 export default function RelatedProductContainer() {
     return(
-        <div class="section section-padding">
-            <div class="container">
+        <div className="section section-padding">
+            <div className="container">
 
-                <div class="section-title2 text-center">
-                    <h2 class="title">You Might Also Like</h2>
+                <div className="section-title2 text-center">
+                    <h2 className="title">You Might Also Like</h2>
                 </div>
 
-                <div class="product-carousel">
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
-                                    <span class="product-badges">
-                                        <span class="onsale">-13%</span>
+                <div className="product-carousel">
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
+                                    <span className="product-badges">
+                                        <span className="onsale">-13%</span>
                                     </span>
                                     <img src="/assets/images/product/s270/product-1.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-1-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-1-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Boho Beard Mug</a></h6>
-                                <span class="price">
-                                    <span class="old">$45.00</span>
-                                <span class="new">$39.00</span>
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Boho Beard Mug</a></h6>
+                                <span className="price">
+                                    <span className="old">$45.00</span>
+                                <span className="new">$39.00</span>
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
                                     <img src="/assets/images/product/s270/product-2.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-2-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-2-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Motorized Tricycle</a></h6>
-                                <span class="price">
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Motorized Tricycle</a></h6>
+                                <span className="price">
                                     $35.00
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <span class="product-badges">
-                                    <span class="hot">hot</span>
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <span className="product-badges">
+                                    <span className="hot">hot</span>
                                 </span>
-                                <a href="product-details.html" class="image">
+                                <a href="product-details.html" className="image">
                                     <img src="/assets/images/product/s270/product-3.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-3-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-3-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Walnut Cutting Board</a></h6>
-                                <span class="price">
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Walnut Cutting Board</a></h6>
+                                <span className="price">
                                     $100.00
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
-                                    <span class="product-badges">
-                                        <span class="onsale">-27%</span>
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
+                                    <span className="product-badges">
+                                        <span className="onsale">-27%</span>
                                     </span>
                                     <img src="/assets/images/product/s270/product-4.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-4-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-4-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Pizza Plate Tray</a></h6>
-                                <span class="price">
-                                    <span class="old">$30.00</span>
-                                <span class="new">$22.00</span>
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Pizza Plate Tray</a></h6>
+                                <span className="price">
+                                    <span className="old">$30.00</span>
+                                <span className="new">$22.00</span>
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
                                     <img src="/assets/images/product/s270/product-5.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-5-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-5-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
-                                <div class="product-options">
-                                    <ul class="colors">
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
+                                <div className="product-options">
+                                    <ul className="colors">
                                         <li style={{ backgroundColor: "#c2c2c2" }}>color one</li>
                                         <li style={{ backgroundColor: "#374140" }}>color two</li>
                                         <li style={{ backgroundColor: "#8ea1b2" }}>color three</li>
                                     </ul>
-                                    <ul class="sizes">
+                                    <ul className="sizes">
                                         <li>Large</li>
                                         <li>Medium</li>
                                         <li>Small</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Minimalist Ceramic Pot</a></h6>
-                                <span class="price">
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Minimalist Ceramic Pot</a></h6>
+                                <span className="price">
                                     $120.00
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
                                     <img src="/assets/images/product/s270/product-6.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-6-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-6-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Clear Silicate Teapot</a></h6>
-                                <span class="price">
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Clear Silicate Teapot</a></h6>
+                                <span className="price">
                                     $140.00
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
-                                    <span class="product-badges">
-                                        <span class="hot">hot</span>
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
+                                    <span className="product-badges">
+                                        <span className="hot">hot</span>
                                     </span>
                                     <img src="/assets/images/product/s270/product-7.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-7-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-7-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Lucky Wooden Elephant</a></h6>
-                                <span class="price">
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Lucky Wooden Elephant</a></h6>
+                                <span className="price">
                                     $35.00
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product">
-                            <div class="product-thumb">
-                                <a href="product-details.html" class="image">
-                                    <span class="product-badges">
-                                        <span class="outofstock"><i class="fal fa-frown"></i></span>
-                                    <span class="hot">hot</span>
+                    <div className="col">
+                        <div className="product">
+                            <div className="product-thumb">
+                                <a href="product-details.html" className="image">
+                                    <span className="product-badges">
+                                        <span className="outofstock"><i className="fal fa-frown"></i></span>
+                                    <span className="hot">hot</span>
                                     </span>
                                     <img src="/assets/images/product/s270/product-8.jpg" alt="Product Image" />
-                                    <img class="image-hover " src="/assets/images/product/s270/product-8-hover.jpg" alt="Product Image" />
+                                    <img className="image-hover " src="/assets/images/product/s270/product-8-hover.jpg" alt="Product Image" />
                                 </a>
-                                <a href="wishlist.html" class="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i class="far fa-heart"></i></a>
-                                <div class="product-options">
-                                    <ul class="colors">
+                                <a href="wishlist.html" className="add-to-wishlist hintT-left" data-hint="Add to wishlist"><i className="far fa-heart"></i></a>
+                                <div className="product-options">
+                                    <ul className="colors">
                                         <li style={{ backgroundColor: "#000000" }}>color one</li>
                                         <li style={{ backgroundColor: "#b2483c" }}>color two</li>
                                     </ul>
-                                    <ul class="sizes">
+                                    <ul className="sizes">
                                         <li>Large</li>
                                         <li>Medium</li>
                                         <li>Small</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="product-info">
-                                <h6 class="title"><a href="product-details.html">Decorative Christmas Fox</a></h6>
-                                <span class="price">
+                            <div className="product-info">
+                                <h6 className="title"><a href="product-details.html">Decorative Christmas Fox</a></h6>
+                                <span className="price">
                                     $50.00
                                 </span>
-                                <div class="product-buttons">
-                                    <a href="#quickViewModal" data-toggle="modal" class="product-button hintT-top" data-hint="Quick View"><i class="fal fa-search"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Add to Cart"><i class="fal fa-shopping-cart"></i></a>
-                                    <a href="#" class="product-button hintT-top" data-hint="Compare"><i class="fal fa-random"></i></a>
+                                <div className="product-buttons">
+                                    <a href="#quickViewModal" data-toggle="modal" className="product-button hintT-top" data-hint="Quick View"><i className="fal fa-search"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Add to Cart"><i className="fal fa-shopping-cart"></i></a>
+                                    <a href="#" className="product-button hintT-top" data-hint="Compare"><i className="fal fa-random"></i></a>
                                 </div>
                             </div>
                         </div>

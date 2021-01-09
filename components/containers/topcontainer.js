@@ -27,7 +27,7 @@ export default function TopContainer({ categoriesProducts }) {
                 <div className="container">
                     <div className="row row-cols-lg-4 row-cols-sm-2 row-cols-1 learts-mb-n40">
                         { categoriesProducts.map((categoriesProduct) => (
-                            <CategoryCard title={categoriesProduct.name} product={categoriesProduct.products[0]} bgColor="#f4ede7" />
+                            <CategoryCard title={categoriesProduct.name} key={categoriesProduct.name} product={categoriesProduct.products[0]} bgColor="#f4ede7" />
                         )) }
                     </div>
                 </div>
